@@ -7,11 +7,11 @@ import pandas as pd
 from objaverse.xl.github import GitHubDownloader
 from objaverse.xl.sketchfab import SketchfabDownloader
 from objaverse.xl.smithsonian import SmithsonianDownloader
-from objaverse.xl.thingiverse import ThingiverseDownloader
+# from objaverse.xl.thingiverse import ThingiverseDownloader
 
 downloaders = {
     "github": GitHubDownloader(),
-    "thingiverse": ThingiverseDownloader(),
+    # "thingiverse": ThingiverseDownloader(),
     "smithsonian": SmithsonianDownloader(),
     "sketchfab": SketchfabDownloader(),
 }

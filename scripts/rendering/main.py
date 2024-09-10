@@ -140,11 +140,12 @@ def handle_found_object(
             args += " --only_northern_hemisphere"
 
         # get the command to run
-        command = f"blender-3.2.2-linux-x64/blender --background --python blender_script.py -- {args}"
+        command = f"/Applications/Blender.app/Contents/MacOS/Blender --background --python blender_script.py -- {args}"
         if using_gpu:
             command = f"export DISPLAY=:0.{gpu_i} && {command}"
 
         # render the object (put in dev null)
+        print(f"{command=}")
         subprocess.run(
             ["bash", "-c", command],
             timeout=render_timeout,

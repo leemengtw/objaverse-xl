@@ -888,7 +888,7 @@ if __name__ == "__main__":
     bpy.context.preferences.addons["cycles"].preferences.get_devices()
     bpy.context.preferences.addons[
         "cycles"
-    ].preferences.compute_device_type = "CUDA"  # or "OPENCL"
+    ].preferences.compute_device_type = "METAL"  # or "OPENCL"
 
     # Render the images
     render_object(
